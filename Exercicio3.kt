@@ -1,4 +1,4 @@
-fun exercicio3(){
+fun main(){
     println("Qual seu nome")
     var nome = readln()
     println("qual seu salario")
