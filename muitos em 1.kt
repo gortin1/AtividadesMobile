@@ -17,16 +17,16 @@ fun exercicio3(){
 }
 fun exercicio4(){
     println("Digite 2 valores abaixo")
-    var a = readln()
-    var b = readln()
-    var c = a.toInt() - b.toInt()
+    var a = readln().toInt()
+    var b = readln().toInt()
+    var c = a- b
     println("o resultado da soma dos dois valores $a e $b é de $c")
 }
 fun exercicio5(){
     println("Digite 2 valores abaixo")
-    var a = readln()
-    var b = readln()
-    var c = (a.toDouble() + b.toDouble())/2
+    var a = readln().toDouble()
+    var b = readln().toDouble()
+    var c = (a + b)/2
     println("o resultado da media dos dois valores $a e $b é de $c")
 }
 fun exercicio6(){
@@ -72,9 +72,55 @@ fun exercicio10(){
     println("Sera necessario $baldes baldes de tinta para pintar")
 }
 fun exercicio11(){
-    
+    println("Digite os valores de A, B, C")
+    val a = readln().toInt()
+    val b = readln().toInt()
+    val c = readln().toInt()
+    val delta = (b*b) - 4 * a * c
+
+    println("o delta é de $delta")
+}
+fun exercicio12(){
+    println("Digite o preço do produto")
+    val preco = readln().toDouble()
+    val precoDesconto = preco+(preco * 0.05)
+    val precoSaida = String.format("%.2f", precoDesconto)
+    println("O preço do produto promocional é $precoSaida")
+}
+fun exercicio13(){
+    println("Digite o salario atual do funcionario")
+    val sal = readln().toDouble()
+    val salarioAumento = sal+(sal * 0.15)
+    val salario = String.format("%.2f", salarioAumento)
+    println("O salario com o aumento é de $salario")
+}
+fun exercicio14(){
+    println("Digite os quilometros rodados")
+    val kmRodado = readln().toInt()
+    println("Digite os dias alugado")
+    val diasAlugado = readln().toInt()
+    val precoTotal = (kmRodado * 0.20) + (diasAlugado * 90)
+    val preco = String.format("%.2f", precoTotal)
+    println("O total a pagar do veiculo sera de $preco")
+}
+fun exercicio15(){
+    println("Digite seus dias trabalhados")
+    val diasTrab = readln().toInt()
+    val sal = (25*8)*diasTrab
+    val salario = String.format("%.2f", sal)
+    println("o seu salario será de $salario")
+}
+fun exercicio16(){
+    println("Digite a quantidade de cigarros que você fuma por dia ")
+    val cigarros = readln()
+    println("Digite a quantos anos você fuma ")
+    var tempoFumado = readln()
+    var diasFumado: Int = 365 * tempoFumado.toInt()
+    var tempoPerdido = ((10*(cigarros.toInt() * diasFumado))/60)/24
+
+    println("Voce perdeu num total de $tempoPerdido dias de vida")
 }
 fun main() {
-    println(exercicio10())
+    println(exercicio11())
 
 }
