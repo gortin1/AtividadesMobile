@@ -1,7 +1,3 @@
-import java.util.function.ToIntFunction
-
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
     println("Digite a quantidade de cigarros que você fuma por dia ")
     val cigarros = readln()
