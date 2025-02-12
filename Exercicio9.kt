@@ -1,4 +1,4 @@
-fun exercicio9(){
+fun main(){
     println("digite quantos dolares deseja ver a conversao")
     var a = readln()
     var reais = a.toDouble()*5.79
