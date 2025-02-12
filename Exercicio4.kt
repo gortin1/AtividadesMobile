@@ -1,4 +1,4 @@
-fun exercicio4(){
+fun main(){
     println("Digite 2 valores abaixo")
     var a = readln().toInt()
     var b = readln().toInt()
