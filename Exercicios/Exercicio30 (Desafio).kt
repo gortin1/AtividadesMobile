@@ -9,5 +9,12 @@ fun main(){
         println("Não é possivel ser um triângulo")
     }else{
         println("É possivel ser um triângulo")
+        if(reta1 == reta2 && reta3 == reta1){
+            println("O triângulo será um triângulo equilátero")
+        }else if(reta1 == reta3 || reta2 == reta1 || reta3 == reta2  ){
+            println("O triângulo será um triângulo isósceles")
+        }else{
+            println("O triângulo será um triângulo escaleno")
+        }
     }
 }
